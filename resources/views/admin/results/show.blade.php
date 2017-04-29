@@ -1,7 +1,7 @@
 @section('title')
 Result
 @endsection
-@extends('layouts.ad')
+@extends('layouts.app')
 
 @section('content')
     <h3 class="page-title">My Result</h3>

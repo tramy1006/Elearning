@@ -40,9 +40,18 @@ Question Option
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
+
                     {!! Form::label('correct', 'Correct', ['class' => 'control-label']) !!}
+                    @if($questions_option->correct == 0)
                     {!! Form::hidden('correct', 0) !!}
-                    {!! Form::checkbox('correct', 1, old('correct', 0), ['class' => 'form']) !!}
+                     <input type="radio" name="correct" id="correct" value="1"  /> yes
+                    <input type="radio" name="correct" id="correct" value="0" checked="checked"/> no
+                    @else($questions_option->correct == 1)
+                    {!! Form::hidden('correct', 1) !!}
+                    <input type="radio" name="correct" id="correct" value="1" checked="checked" /> yes
+                    <input type="radio" name="correct" id="correct" value="0" /> no
+                    <!-- <input class="form" type="checkbox" value="0" name="correct" checked id="correct" :not(:checked)> -->
+                    @endif
                     <p class="help-block"></p>
                     @if($errors->has('correct'))
                         <p class="help-block">
@@ -57,5 +66,8 @@ Question Option
 
     {!! Form::submit(trans('update'), ['class' => 'btn btn-danger']) !!}
     {!! Form::close() !!}
+   <script>
+   $("input:checkbox:not(:checked)")
+   </script>
 @stop
 

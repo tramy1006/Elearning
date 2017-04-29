@@ -27,7 +27,7 @@
                        
                 <div class="col-md-3" >
                     <br>
-                        <video width="200px" height="200px" class="img-responsive" >
+                        <video width="200px" height="200px" class="img-responsive" poster="{{$lesson->hinh}}">
                             <source  src="{{$lesson->media}}" type="video/mp4" >
                         </video>
                             

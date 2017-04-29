@@ -22,7 +22,7 @@ Users
                         
                         <th>User</th>
                         <th>Action</th>
-                        <th>Action Model<th>
+                        <th>Action Model</th>
                         <th>Action id</th>
                         
                     </tr>

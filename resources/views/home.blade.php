@@ -40,6 +40,7 @@
 				       <div class="col-md-7">
 				            <h3>{{$les['title']}}</h3>
 				            <p>{{$les['tomtat']}}</p>
+				           
 				            <a class="btn btn-primary" href="/cate/lesson/{{$les->id}}">Chi Tiết <span class="glyphicon glyphicon-chevron-right"></span></a>
 						</div>
 

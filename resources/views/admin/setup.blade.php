@@ -27,7 +27,7 @@
 <div class="container">
     <div class="col-md-4" style="margin-right: 100px;margin-left: 30px;margin-top: 70px"> 
 
-                  <img src="{{ asset('/uploads/avatars/' . $user->avatar ) }}" style="width:270px; height: 270px; float: left; border-radius: 50%;">
+                  <img src="{{ asset('/uploads/avatars/default.jpg') }}" style="width:270px; height: 270px; float: left; border-radius: 50%;">
 <div>
 <h3 style="margin-left: 30px">{{ Auth::user()->name}}'s Profile</h3>
 <pre>
