@@ -7,7 +7,7 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/contact', 'HomeController@contact');
-Route::get('/quantri', 'UserController@getAdmin');
+//Route::get('/quantri', 'UserController@getAdmin');
 //profile
 Route::get('/profile', 'HomeController@profile');
 Route::post('/profile', 'HomeController@update_profile');
@@ -99,7 +99,7 @@ Route::group(['prefix'=>'forum'], function()
 Route::get('test/{id}','TestController@getTest');
 Route::post('test/{id}','TestController@postTest');
 
-Route::get('/dothi', 'HomeController@dash');
+Route::get('/quantri', 'HomeController@dash');
 
 Route::group(['middleware' => 'auth'], function () {
 	

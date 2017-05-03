@@ -1,7 +1,7 @@
 @section('title')
 Lessons
 @endsection
-@extends('layouts.ad') 
+@extends('layouts.ad')
 @section('content')  
       <div class="container-fluid">
                 <div class="row">
@@ -28,7 +28,7 @@ Lessons
                                 <th></th>
                                 <th>ID</th>
                                 <th style="width:150px" align="center" >Tiêu Đề</th>
-                                <th style="width:300px;">Tóm Tắt</th>
+                                <th style="width:200px;">Tóm Tắt</th>
                                 <th>Category</th>
                                 <th style="width: 200px">Video</th>
                                 
@@ -37,9 +37,9 @@ Lessons
                                 <th>Total Question</th>
 
                                 <th >Question</th>
-                                <th>Start Lesson</th>
-                                <th style="width: 80px;">Delete</th>
-                                <th style="width: 80px;">Edit</th>
+                                
+                                <th style="width: 100px">Action</th>
+                                
                             </tr>
                             
                         </thead>
@@ -66,27 +66,30 @@ Lessons
                                     {{$lesson->luotxem}}
                                 </td>
                                 <td align="center">
-                                @if($lesson->noibat == 0)
-                                    {{'không'}}
-                                @else
-                                    {{'có'}}
-                                @endif
+                                    @if($lesson->noibat == 0)
+                                        {{'không'}}
+                                    @else
+                                        {{'có'}}
+                                    @endif
                                 </td>  
                                 <td>
-                                <?php
-                                    $count = DB::table('lessons')->join('questions','lessons.id','=','questions.lesson_id')->where('lesson_id',$lesson->id)->count();
-                                    echo $count;
-                                 ?>
+                                    <?php
+                                        $count = DB::table('lessons')->join('questions','lessons.id','=','questions.lesson_id')->where('lesson_id',$lesson->id)->count();
+                                        echo $count;
+                                     ?>
                                      
                                  </td>
-                                <td > <a href="/add/{{$lesson->id}}" class="btn btn-primary"> <i class="glyphicon glyphicon-plus"></i>Add </a></td>             
-                                <td class="center">
-                                  
-                                     <a href="delete/{{$lesson->id}}" class="btn btn-danger"> <i class="fa fa-trash-o fa-fw"></i>Delete</a>
+                                <td > 
+                                    <a href="/add/{{$lesson->id}}" class="btn btn-primary"> <i class="glyphicon glyphicon-plus"></i>Add </a>
+                                </td>             
+                                <td >
+                                    <div style="float: left;">
+                                    <a href="delete/{{$lesson->id}}" class="btn btn-xs btn-danger"> Delete</a>
+                                    </div>
+                                    <div style="float: right;">
 
-                                </td>
-                                <td class="center">
-                                    <a href="edit/{{$lesson->id}}" class="btn btn-primary"><i class="fa fa-pencil fa-fw" ></i>Edit</a>
+                                    <a href="edit/{{$lesson->id}}" class="btn btn-xs btn-primary">Edit</a>
+                                    </div>
                                 </td>
 
                             </tr>

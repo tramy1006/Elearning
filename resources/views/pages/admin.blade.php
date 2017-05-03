@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> @yield('title')</title>
+  <title> My Charts</title>
+
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +23,7 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="/admin/dist/css/skins/_all-skins.min.css">
-
+{!! Charts::assets() !!}
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -50,7 +51,7 @@
             <a href="{{ url('/home') }}">Home</a>
             
           </li>
-        	
+            
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="{{Auth::user()->avatar}}" class="user-image" alt="User Image">
@@ -180,11 +181,19 @@
   </aside>
 
   <div class="content-wrapper">
-
-    <div>    
-        @yield('content')
-        
+   @section('sidebar')
+            <div >
+            {!! $chart->render() !!}
     </div>
+    </br>
+     <div>
+            {!! $ch->render() !!}
+ </div>
+      @show
+    <div>    
+      @yield('content')</div>
+    </div>
+   
   </div>
 
   <div class="control-sidebar-bg"></div>
@@ -214,7 +223,6 @@
 <script src="/admin/dist/js/pages/dashboard2.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/admin/dist/js/demo.js"></script>
-<script src="/admin/js/main.js"></script>
- @yield('script')
+ 
 </body>
 </html>

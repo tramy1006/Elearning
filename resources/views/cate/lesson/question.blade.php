@@ -1,7 +1,7 @@
 @section('title')
 Lessons
 @endsection
-@extends('layouts.ad') 
+@extends('layouts.ad')
 @section('content')  
     <div class="container-fluid">
         <div class="row">

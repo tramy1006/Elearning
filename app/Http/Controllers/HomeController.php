@@ -146,7 +146,7 @@ class HomeController extends Controller
             
             ->Responsive(false)
             ->lastByMonth(6, true);
-        return view('pages.dothi', ['chart' => $chart,'ch'=>$ch]);
+        return view('pages.admin', ['chart' => $chart,'ch'=>$ch]);
    }
    
     

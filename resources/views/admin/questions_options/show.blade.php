@@ -2,7 +2,6 @@
 Question Option
 @endsection
 @extends('layouts.ad')
-
 @section('content')
     <h3 class="page-title">Question Option</h3>
     

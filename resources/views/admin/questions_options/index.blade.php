@@ -20,7 +20,7 @@ Question Option
                 <thead>
                     <tr>
                         <th style="text-align:center;"><input type="checkbox" id="select-all" /></th>
-                        
+                        <th>Question_ID</th>
                         <th>Question</th>
                         <th>Option</th>
                         <th>Correct</th>
@@ -33,6 +33,7 @@ Question Option
                         @foreach ($questions_options as $questions_option)
                             <tr data-entry-id="{{ $questions_option->id }}">
                                 <td></td>
+                                <td>{{ $questions_option->question->id or '' }}</td>
                                 <td>{{ $questions_option->question->question_text or '' }}</td>
                                 <td>{{ $questions_option->option }}</td>
                                 <td>{{ $questions_option->correct == 1 ? 'Yes' : 'No' }}</td>

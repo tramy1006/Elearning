@@ -1,7 +1,7 @@
 @section('title')
 Test
 @endsection
-@extends('layouts.app')
+@extends('layouts.ad')
 
 @section('content')
     
