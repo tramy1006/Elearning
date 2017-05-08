@@ -1,168 +1,114 @@
-@extends('layouts.app')
-@section('slide')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    @include('pages.slide')
+    <title>E-Learning</title>
 
-@endsection
-@section('menu')
-<div class="col-md-3" style="float: left;">
-    @include('pages.menu')
-</div>
-@endsection
-@section('content')
-<div class="col-md-9" style="float: right;">
-<div class="panel panel-default">
-    <div class="ttr_Home_html_row0 row">
-<div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<div class="ttr_Home_html_column00">
+    <!-- Fonts -->
 
-<div class="html_content" style="margin-top: 20px"><p style="text-align:Center;"><span style="font-family:'Arial';font-weight:700;font-size:2.143em;color:rgba(5,38,55,1);">WELCOME TO WEBSITE!</div>
-<div style="clear:both;margin-top: 20px"></div>
-</div>
-</div>
-<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
-</div>
-</div>
-<div class="ttr_Home_html_row1 row">
-<div class="post_column col-lg-4 col-md-4 col-sm-4 col-xs-12">
-<div class="ttr_Home_html_column10">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="html_content"><p style="margin:0.14em 0em 0em 0em;text-align:Center;"><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="/1.jpg" style="max-width:250px;max-height:250px;" /></span></span></p><p style="margin:0.14em 0em 0em 0em;text-align:Center;"><span style="font-family:'Arial';font-weight:700;font-size:1.571em;color:rgba(5,38,55,1);">CARE ADVICE</span></p><p style="margin:0.71em 0em 0em 0em;text-align:Center;line-height:1.76056338028169;"><span style="color:rgba(5,38,55,1);">T</span><span style="color:rgba(5,38,55,1);">est link adipiscing elit.Nullam dignissim convallis est.Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo</span><span style="color:rgba(5,38,55,1);">.</span></p></div>
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div style="clear:both;"></div>
-</div>
-</div>
-<div class="clearfix visible-xs-block">
-</div>
-<div class="post_column col-lg-4 col-md-4 col-sm-4 col-xs-12">
-<div class="ttr_Home_html_column11">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="html_content">><img class="ttr_uniform" src="/1.jpg" style="max-width:250px;max-height:250px;" /><span style="font-family:'Arial';font-weight:700;font-size:1.571em;color:rgba(5,38,55,1);">VATARINARY HELP</span></p><p style="margin:0.71em 0em 0em 0em;text-align:Center;line-height:1.76056338028169;"><span style="color:rgba(5,38,55,1);">Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.Maecenas ornare tortor.</span></p><p style="margin:2.86em 0em 0em 0em;text-align:Center;line-height:1.76056338028169;"></p></div>
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div style="clear:both;"></div>
-</div>
-</div>
-<div class="clearfix visible-xs-block">
-</div>
-<div class="post_column col-lg-4 col-md-4 col-sm-4 col-xs-12">
-<div class="ttr_Home_html_column12">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="html_content"><p style="margin:0.14em 0em 0em 0em;text-align:Center;"><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="1.jpg" style="max-width:250px;max-height:250px;" /></span></span></p><p style="margin:0.14em 0em 0em 0em;text-align:Center;"><span style="font-family:'Arial';font-weight:700;font-size:1.571em;color:rgba(5,38,55,1);">OUR TIPS</span></p><p style="margin:0.71em 0em 0em 0em;text-align:Center;line-height:1.76056338028169;"><span style="color:rgba(5,38,55,1);">Nunc iaculis suscipit dui.Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.Maecenas ornare tortor.</span><span style="color:rgba(5,38,55,1);"> </span><span style="color:rgba(5,38,55,1);">massa quis luctus fermentum</span><span style="color:rgba(5,38,55,1);">.</span></p></div>
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div style="clear:both;"></div>
-</div>
-</div>
-<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
-</div>
-</div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   
+    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
+    <script src="/js/bootstrap.js"></script>
+    
+    <script type="text/javascript" src="{!! asset('admin_asset/ck/ckeditor/ckeditor.js') !!}"></script>
+    <style>
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+   
+}
+
+.dropdown-content {
+    display: none;
+  
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body id="app-layout">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+       @include('pages.nav')
+    </nav>
+ <div class="container">
+        <!-- slider -->
+        <div class="row carousel-holder">
+            <div class="col-md-12">
+              @include('pages.slide')
+            </div>
+        </div>
+        <!-- end slide -->
+
+       
+        <div class="row main-left">
+            <div class="col-md-12" >
+             
+			<div class="panel panel-default">
+				<div class="row">
+				  	<h2 align="center" style="margin-bottom: 50px; margin-top: 20px">WEBCOME TO WEBSITE</h2>
+				  	<div class="col-md-3" style="margin-right: 60px; height: 250px; margin-left: 70px">
+				  		<img src="/thongminh.jpg" width="100%" height="100px" >
+				  		<b>Hệ thống bài học thông minh, đa dạng & liên tục được cập nhật</b>
+				  	</div>
+				  	<div class="col-md-3" style=" margin-right: 60px; height: 250px ">
+				  		<img src="/doituong.jpg" width="100%" height="100px" >
+				  		<b>Chương trình phù hợp với mọi đối tượng</b>
+				  	</div>
+				  	<div class="col-md-3" style="height: 250px">
+				  	<img src="/thoigian.jpg" width="100%" height="100px">
+				  		<b>Chủ động về thời gian, địa điểm</b>
+				  	</div>
+				  	<div class="col-md-3" style="margin-right: 60px; height: 250px; margin-left: 70px">
+				  		<img src="/ontap.jpg" width="100%" height="100px" >
+				  		<b>Ôn tập và học lại kiến thức theo trình độ của mình</b>
+				  	</div>
+				  		<div class="col-md-3" style="margin-right: 60px; height: 250px; ">
+				  		<img src="/nguoidung.png" width="100%" height="100px" >
+				  		<b>Gửi bài để nhận điểm và kết quả trực tiếp từ hệ thống</b>
+				  	</div>
+				  		<div class="col-md-3" style=" height: 250px;">
+				  		<img src="/tailieu.jpg" width="100%" height="100px" >
+				  		<b>Tài liệu tiếng Anh phong phú, thực tế</b>
+				  	</div>
+			  	</div>
+
+			  	
+			</div>
+		</div>
+        </div>
+       
+    </div> 
+    <!-- JavaScripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    
+    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my.js"></script>
 
 
-
-<div class="ttr_Home_html_row5 row">
-<div class="post_column col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<div class="ttr_Home_html_column50">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="html_content"><p style="text-align:Center;"><span style="font-family:'Arial';font-weight:700;font-size:1.857em;color:rgba(5,38,55,1);">CLIENTS SAYS</span></p></div>
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div style="clear:both;"></div>
-</div>
-</div>
-<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
-</div>
-</div>
-<div class="ttr_Home_html_row6 row">
-<div class="post_column col-lg-2 col-md-3 col-sm-3 col-xs-12">
-<div class="ttr_Home_html_column60">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="html_content"><p><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="/1.jpg" style="max-width:150px;max-height:150px;" /></span></span></p></div>
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div style="clear:both;"></div>
-</div>
-</div>
-<div class="clearfix visible-xs-block">
-</div>
-<div class="post_column col-lg-4 col-md-9 col-sm-9 col-xs-12">
-<div class="ttr_Home_html_column61">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="html_content"><p><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">A</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">LIQUAM</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">LIBERO</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">NISI</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">IMPERDIAT</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">AT</span></p><p style="margin:1.43em 0em 0.36em 0em;"><span style="color:rgba(5,38,55,1);">G</span><span style="color:rgba(5,38,55,1);">ravida vehicula, nisl.Praesent mattis, massa quis</span><span style="color:rgba(5,38,55,1);">.</span><span style="color:rgba(5,38,55,1);"> luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam</span><span style="color:rgba(5,38,55,1);">. </span><span style="color:rgba(5,38,55,1);">Praesent mattis, massa quis</span><span style="color:rgba(5,38,55,1);">.</span><span style="color:rgba(5,38,55,1);"> luctus fermentum, turpis mi volutpat justo</span><span style="color:rgba(5,38,55,1);">.</span></p><p>&nbsp;</p></div>
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div style="clear:both;"></div>
-</div>
-</div>
-<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
-</div>
-<div class="post_column col-lg-2 col-md-3 col-sm-3 col-xs-12">
-<div class="ttr_Home_html_column62">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="html_content"><p><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="/1.jpg" style="max-width:150px;max-height:150px;" /></span></span></p></div>
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div style="clear:both;"></div>
-</div>
-</div>
-<div class="clearfix visible-xs-block">
-</div>
-<div class="post_column col-lg-4 col-md-9 col-sm-9 col-xs-12">
-<div class="ttr_Home_html_column63">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="html_content"><p><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">N</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">UNC</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">IACULIS</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">SUSCIPIT</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">DUI AM</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">SIT.</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span></p><p style="margin:1.43em 0em 0.36em 0em;"><span style="color:rgba(5,38,55,1);">Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.Praesent mattis, massa quis luctus fermentum, turpis mi volutpat </span><span style="color:rgba(5,38,55,1);">j</span><span style="color:rgba(5,38,55,1);">usto, eu volutpat enim diam eget</span><span style="color:rgba(5,38,55,1);">.</span></p></div>
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div style="clear:both;"></div>
-</div>
-</div>
-<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
-</div>
-</div>
-<div class="ttr_Home_html_row7 row">
-<div class="post_column col-lg-2 col-md-3 col-sm-3 col-xs-12">
-<div class="ttr_Home_html_column70">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="html_content"><p><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="/1.jpg" style="max-width:150px;max-height:150px;" /></span></span></p></div>
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div style="clear:both;"></div>
-</div>
-</div>
-<div class="clearfix visible-xs-block">
-</div>
-<div class="post_column col-lg-4 col-md-9 col-sm-9 col-xs-12">
-<div class="ttr_Home_html_column71">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="html_content"><p><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">N</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">UNC</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">IACULIS</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">SUSCIPIT</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">DUI AM</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">SIT.</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span></p><p style="margin:1.43em 0em 0.36em 0em;"><span style="color:rgba(5,38,55,1);">Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.Praesent mattis, massa quis luctus fermentum, turpis mi volutpat </span><span style="color:rgba(5,38,55,1);">j</span><span style="color:rgba(5,38,55,1);">usto, eu volutpat enim diam eget</span><span style="color:rgba(5,38,55,1);">.</span></p></div>
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div style="clear:both;"></div>
-</div>
-</div>
-<div class="clearfix visible-sm-block visible-md-block visible-xs-block">
-</div>
-<div class="post_column col-lg-2 col-md-3 col-sm-3 col-xs-12">
-<div class="ttr_Home_html_column72">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="html_content"><p><span class="ttr_image" style="float:none;display:block;text-align:center;overflow:hidden;margin:0em 0em 0em 0em;"><span><img class="ttr_uniform" src="/1.jpg" style="max-width:150px;max-height:150px;" /></span></span></p></div>
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div style="clear:both;"></div>
-</div>
-</div>
-<div class="clearfix visible-xs-block">
-</div>
-<div class="post_column col-lg-4 col-md-9 col-sm-9 col-xs-12">
-<div class="ttr_Home_html_column73">
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div class="html_content"><p><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">A</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">LIQUAM</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">LIBERO</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">NISI</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">IMPERDIAT</span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);"> </span><span style="font-family:'Arial';font-weight:700;font-size:1.143em;color:rgba(5,38,55,1);">AT</span></p><p style="margin:1.43em 0em 0.36em 0em;"><span style="color:rgba(5,38,55,1);">G</span><span style="color:rgba(5,38,55,1);">ravida vehicula, nisl.Praesent mattis, assa quis</span><span style="color:rgba(5,38,55,1);">.</span><span style="color:rgba(5,38,55,1);"> luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam</span><span style="color:rgba(5,38,55,1);">. </span><span style="color:rgba(5,38,55,1);">Praesent attis, massa quis</span><span style="color:rgba(5,38,55,1);">.</span><span style="color:rgba(5,38,55,1);"> luctus fermentum, turpis mi pat justo</span><span style="color:rgba(5,38,55,1);">.</span></p></div>
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-<div style="clear:both;"></div>
-</div>
-</div>
-<div class="clearfix visible-lg-block visible-sm-block visible-md-block visible-xs-block">
-</div>
-</div>
-<div style="height:0px;width:0px;overflow:hidden;-webkit-margin-top-collapse: separate;"></div>
-</div>
-</div>
-<div style="clear:both">
-</div>
-</div>
-</div>
-<div style="height:0px;width:0px;overflow:hidden;"></div>
-</div>
-</div>
-
-@endsection
+</body>
+</html>

@@ -42,6 +42,7 @@ Edit Lesson
                             <label>Nội Dung</label>
                             <textarea id="demo" name="noidung" class="form-control ckeditor" rows="5">{{$less->noidung}}</textarea>
                         </div>
+                        
                         <div class="form-group">
                             <label>Nổi Bật</label>
                             <label class="radio-inline">

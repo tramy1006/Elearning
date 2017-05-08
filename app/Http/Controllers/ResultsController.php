@@ -16,21 +16,14 @@ class ResultsController extends Controller
     {
         
         $results = Test::all()->load('user');
-        
-        //dd($results);
-        if(Auth::user()->role < 1) {
+        if(!Auth::user()->role == 0) {
             $results = $results->where('user_id', '=', Auth::id());
+    
         }
-
+       
         return view('admin.results.index', compact('results'));
     }
 
-    /**
-     * Display Result.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         $test = Test::find($id)->load('user');

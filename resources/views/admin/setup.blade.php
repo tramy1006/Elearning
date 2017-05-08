@@ -51,9 +51,10 @@ Email : {{ Auth::user()->email }}
                 <div class="panel-body">
                     <form enctype="multipart/form-data" action="" method="POST" >
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <div >       
+                        <div > 
+                       
                             <label>UserName</label>
-                            <input type="text" name="name" class="form-control" aria-describedby="basic-addon1" value="{{ $user->name }}" ">
+                            <input type="text" name="name" class="form-control" aria-describedby="basic-addon1" value="{{ $user->name }}" >
                         </div> 
                         <div style="margin-top: 20px">
                            <label> Email</label>
@@ -105,6 +106,7 @@ Email : {{ Auth::user()->email }}
                     }
                 });
             });
+             
         </script>
 
 </body>

@@ -27,7 +27,10 @@ Result
                         </tr>
                         <tr>
                             <th>Score</th>
-                            <td>{{ $test->result }}/10</td>
+                            <td>{{ $test->result }}/<?php
+                                        $count = DB::table('lessons')->join('questions','lessons.id','=','questions.lesson_id')->where('lesson_id',$test->lesson_id)->count();
+                                        echo $count;
+                                     ?></td>
                         </tr>
                     </table>
                 <?php $i = 1 ?>
@@ -77,7 +80,7 @@ Result
 
             <p>&nbsp;</p>
 
-            <a href="{{ route('tests.index') }}" class="btn btn-default">Take another quiz</a>
+            <a href="/test/{{$test->lesson_id}}" class="btn btn-default">Take another quiz</a>
             <a href="{{ route('results.index') }}" class="btn btn-default">See all my results</a>
         </div>
     </div>

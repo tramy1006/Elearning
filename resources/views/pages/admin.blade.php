@@ -189,6 +189,10 @@
      <div>
             {!! $ch->render() !!}
  </div>
+ </br>
+     <div>
+            {!! $char->render() !!}
+ </div>
       @show
     <div>    
       @yield('content')</div>

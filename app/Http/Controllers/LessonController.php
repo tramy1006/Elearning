@@ -100,6 +100,7 @@ class LessonController extends Controller
         $less->noidung = $request->noidung;
         $less->level = $request->level; 
        
+                                       
 
         Cloudder::destroyImage('khoaluan/'. $less->title);
         if($request->hasFile('hinh'))

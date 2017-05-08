@@ -14,6 +14,7 @@ use App\Comment;
 use App\Slide;
 use Cloudder;
 use Charts;
+use App\Question;
 class HomeController extends Controller
 {
 
@@ -92,13 +93,13 @@ class HomeController extends Controller
         
         $this->validate($request, 
             [
-                'name' =>'required|unique:users,name|min:3|max:100',
+                'name' =>'required|min:3|max:100',
                 
                 
             ], 
             [
                 'name.required'=>' Bạn chưa nhập tên',
-                'name.unique'=>'Tên đã tồn tại',
+                
                 'name.min'=>'Tên ít nhất 3 kí tự',
                 'name.max'=>'Tên nhiều nhất 100 kí tự'
                
@@ -146,7 +147,15 @@ class HomeController extends Controller
             
             ->Responsive(false)
             ->lastByMonth(6, true);
-        return view('pages.admin', ['chart' => $chart,'ch'=>$ch]);
+
+        $char = Charts::database(Question::all(),'line', 'highcharts')
+            ->Title('Questions')
+            ->ElementLabel("Total")
+            ->Dimensions(1000, 500)
+            
+            ->Responsive(false)
+            ->lastByMonth(6, true);
+        return view('pages.admin', ['chart' => $chart,'ch'=>$ch,'char'=>$char]);
    }
    
     
