@@ -8,9 +8,18 @@ use App\Http\Requests;
 use App\Category;
 use App\Word;
 use DB;
-
+use App\Slide;
+use App\Lesson;
 class CateController extends Controller
 {
+     public function __construct()
+    {
+         $this->middleware('auth');
+        $cate = Category::all();
+        $slide= Slide::all();
+        view()->share('cate', $cate);
+        view()->share('slide',$slide);
+    }
     public function getList()
     {
     	$cate = Category::paginate(5);
@@ -19,6 +28,28 @@ class CateController extends Controller
         
     	return view('cate.show', ['cate'=>$cate,'category'=>$category]);
     }
+    public function level0List($id)
+    {
+        $catt = Category::find($id);
+        $less = Lesson::where('cate_id', $id)->where('level','=','0')->get();
+
+        return view('pages.level0', ['catt'=>$catt, 'less'=>$less]);
+    }
+    public function level1List($id)
+    {
+        $catt = Category::find($id);
+        $less = Lesson::where('cate_id', $id)->where('level','=','1')->get();
+
+        return view('pages.level0', ['catt'=>$catt, 'less'=>$less]);
+    }
+    public function level2List($id)
+    {
+        $catt = Category::find($id);
+        $less = Lesson::where('cate_id', $id)->where('level','=','2')->get();
+
+        return view('pages.level0', ['catt'=>$catt, 'less'=>$less]);
+    }
+   
     public function getShow()
     {
         $cate = Category::all();

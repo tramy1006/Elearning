@@ -54,9 +54,9 @@ class HomeController extends Controller
         $less->increment('luotxem');
         
        
-        $lessnoibat = Lesson::where('noibat', 1)->take(4)->get();
-        $lesslienquan = Lesson::where('cate_id', $less->cate_id)->take(4)->get();
-        return view('pages.chitiet', ['less'=>$less, 'lessnoibat'=>$lessnoibat, 'lesslienquan'=>$lesslienquan]);
+       
+        $lesslienquan = Lesson::where('cate_id', $less->cate_id)->take(8)->get();
+        return view('pages.chitiet', ['less'=>$less, 'lesslienquan'=>$lesslienquan]);
     }
     public function timkiem(Request $request)
     {

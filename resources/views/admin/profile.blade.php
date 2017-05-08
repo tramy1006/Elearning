@@ -34,6 +34,7 @@
     <div class="col-md-4" style="margin-top: 70px"> 
 
                   <img src="{{ $user->avatar}}" style="width:270px; height: 270px; border-radius: 50%;">
+                   @if(Auth::user()->facebook_id == '')    
                   <form enctype="multipart/form-data" action="/profile" method="POST" >
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <table >
@@ -55,7 +56,7 @@
                             </tr>
                         </table>
                 </form>
-
+                @endif
             </div>
             <div class="col-md-4" style="margin-top: 100px">
                 
@@ -66,7 +67,7 @@ Email : {{ Auth::user()->email }}
                 </pre>
 
                       @if(Auth::check()) 
-                       @if(Auth::user()->role <= 1)             
+                       @if(Auth::user()->role <= 1 && Auth::user()->facebook_id == '')             
                  <button type="submit" class="btn btn-primary" style="margin-left: 50px"><a href="/profile/edit/{{$user->id}}" style="color: #fff">Setup Profile</a></button>
                  @endif
                  @endif

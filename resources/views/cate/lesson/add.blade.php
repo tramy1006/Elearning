@@ -50,12 +50,15 @@ Add Lesson
                             
                         </div>
                          <div class="form-group">
-                            <label>Nổi Bật</label>
+                            <label>Level</label>
                             <label class="radio-inline">
-                                <input name="noibat" value="0" checked="" type="radio"> Không
+                                <input name="level" value="0" checked="" type="radio"> Dễ
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="noibat" value="1">Có
+                                <input type="radio" name="level" value="1">Trung bình
+                            </label>
+                             <label class="radio-inline">
+                                <input type="radio" name="level" value="2">Khó
                             </label>
                         </div>
                         <div class="form-group">

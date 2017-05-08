@@ -161,7 +161,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         JD\Cloudder\CloudderServiceProvider::class,
         ConsoleTVs\Charts\ChartsServiceProvider::class,
-        
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
     ],
 
@@ -213,7 +213,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
         'Charts' =>ConsoleTVs\Charts\Facades\Charts::class,
-        
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 

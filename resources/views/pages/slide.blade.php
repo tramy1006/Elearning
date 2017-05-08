@@ -24,7 +24,7 @@
         @endif 
         >
         <?php $i++; ?>
-            <img style="height: 400px; width: 1100px" class="slide-image" src="{{$sl->hinh}}" alt="">
+            <img style="height: 320px; width: 1100px" class="slide-image" src="{{$sl->hinh}}" alt="">
         </div>
      @endforeach   
     </div>

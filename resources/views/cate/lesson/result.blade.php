@@ -49,9 +49,12 @@ Result
                                 <ul>
                                 @foreach($results->question->options as $option)
                                     <li style="@if ($option->correct == 1) font-weight: bold; @endif
-                                        @if ($results->option_id == $option->id) text-decoration: underline @endif">{{ $option->option }}
-                                        @if ($option->correct == 1) <em>(correct answer)</em> @endif
-                                        @if ($results->option_id == $option->id) <em>(your answer)</em> @endif
+                                        @if ($results->option_id == $option->id) text-decoration: underline @endif">
+
+                                            {{ $option->option }}
+
+                                        @if ($option->correct == 1)<em>(correct answer)</em> @endif
+                                        @if ($results->option_id == $option->id) <em >(your answer)</em> @endif
                                     </li>
                                 @endforeach
                                 </ul>

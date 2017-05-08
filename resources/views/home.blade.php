@@ -26,7 +26,7 @@
 			        </h3>
 			        <?php 
 			           //lay ra 5 tin cua lessons
-			            $data = $theloai->lessons->where('noibat',1)->sortByDesc('created_at')->take(5);
+			            $data = $theloai->lessons->sortByDesc('created_at')->take(5);
 			                		//la ra 1 tin thi trong data con 4tin
 			                $les = $data->shift();
 			        ?>

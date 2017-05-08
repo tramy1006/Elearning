@@ -45,15 +45,15 @@ Edit Lesson
                         <div class="form-group">
                             <label>Nổi Bật</label>
                             <label class="radio-inline">
-                                <input name="noibat" value="0" 
-                                @if($less->noibat == 0)
+                                <input name="level" value="0" 
+                                @if($less->level == 0)
                                     {{"checked"}}
                                 @endif
                                 type="radio" /> Không
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="noibat" value="1"
-                                @if($less->noibat == 1)
+                                <input type="radio" name="level" value="1"
+                                @if($less->level == 1)
                                     {{"checked"}}
                                 @endif
                                 >Có

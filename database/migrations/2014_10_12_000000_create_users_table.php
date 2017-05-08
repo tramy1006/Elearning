@@ -17,7 +17,9 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('avatar')->default('http://res.cloudinary.com/studentt/image/upload/v1491129080/default_zxelv1.jpg');
+            $table->string('facebook_id');
+            
+            $table->string('avatar')->default('/uploads/default.jpg');
             $table->string('role')->default('0');
             $table->rememberToken();
             $table->timestamps();

@@ -53,7 +53,7 @@ class LessonController extends Controller
         $less->tomtat = $request->tomtat;
         $less->noidung = $request->noidung;
         $less->luotxem = 0;
-        $less->noibat = $request->noibat;        
+        $less->level = $request->level;        
         if($request->hasFile('hinh'))
         {
             $file = $request->hinh;
@@ -98,7 +98,7 @@ class LessonController extends Controller
         $less->title = $request->tieude;
         $less->tomtat = $request->tomtat;
         $less->noidung = $request->noidung;
-        $less->noibat = $request->noibat; 
+        $less->level = $request->level; 
        
 
         Cloudder::destroyImage('khoaluan/'. $less->title);

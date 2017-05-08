@@ -22,7 +22,8 @@
                     
         @endif
         </ul>
-        
+                               
+           
          @if (auth()->check())
          <form role="form" action="/timkiem" method="post" class="navbar-form navbar-left">
                 <input type="hidden" name="_token" value="{{csrf_token() }}"/>
@@ -36,8 +37,10 @@
         <ul class="nav navbar-nav navbar-right">
             @if (auth()->check())
             
-             <li style="position: relative; "><a href="{{ url('/forum/list') }}">Forum</a></li>
-                @if(Auth::user()->role >= 1)
+            <!-- <li style="position: relative; "><a href="{{ url('/forum/list') }}">Forum</a></li> -->
+           
+             
+                  @if(Auth::user()->role >= 1)
                     
                 <li style="margin-right: 20px; position: relative; padding-left: 50px;"><a href="{{ url('/quantri') }}">Management</a></li>
                  @endif
@@ -46,8 +49,7 @@
                 <li><a href="{{ url('/login') }}">Login</a></li>
                 <li><a href="{{ url('/register') }}">Register</a></li>
             @else
-                    
-                <li>
+          <li>
                     <a href="{{ url('/profile') }}"  style="position: relative; padding-left: 50px;">
                         <img src="{{ Auth::user()->avatar }}" style="width:32px; height: 32px; position: absolute; top:10px; left:10px; border-radius: 50%;">
                                 {{ Auth::user()->name }}

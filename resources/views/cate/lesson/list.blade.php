@@ -33,7 +33,7 @@ Lessons
                                 <th style="width: 200px">Video</th>
                                 
                                 <th style="width: 80px">Xem</th>
-                                <th style="width: 80px">Nổi Bật</th>
+                                <th style="width: 80px">Level</th>
                                 <th>Total Question</th>
 
                                 <th >Question</th>
@@ -66,10 +66,12 @@ Lessons
                                     {{$lesson->luotxem}}
                                 </td>
                                 <td align="center">
-                                    @if($lesson->noibat == 0)
-                                        {{'không'}}
+                                    @if($lesson->level == 0)
+                                        {{'Dễ'}}
+                                    @elseif($lesson->level == 1)
+                                    {{'Trung bình'}}
                                     @else
-                                        {{'có'}}
+                                        {{'Khó'}}
                                     @endif
                                 </td>  
                                 <td>

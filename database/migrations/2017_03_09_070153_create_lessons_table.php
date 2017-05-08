@@ -20,7 +20,7 @@ class CreateLessonsTable extends Migration
             $table->string('hinh');
             $table->string('media');
             $table->integer('luotxem')->default('0');
-            $table->integer('noibat');
+            $table->integer('level');
             $table->integer('total_question');
             $table->integer('cate_id')->unsigned();
             $table->foreign('cate_id')->references('id')->on('categories')->onDelete('cascade');

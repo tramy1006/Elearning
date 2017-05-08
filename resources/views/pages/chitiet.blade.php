@@ -29,19 +29,17 @@
             
             <div class="well">
                 <h4>Viết bình luận ...<span class="glyphicon glyphicon-pencil"></span></h4>
-                <form role="form" action="" method="post">
+                <form  action="" method="post" class="ajax">
                 <input type="hidden" name="_token" value="{{csrf_token() }}"/>
                     <div class="form-group">
-                        <textarea class="form-control" name="noidung" rows="3"></textarea>
+                        <textarea class="form-control" name="noidung" id="noidung" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Gửi</button>
+                    <input type="submit" class="btn btn-primary" value="gửi">
                 </form>
             </div>
 
-            <hr>        
-
-
-            @foreach($less->comments as $cmt)
+            <hr>
+             @foreach($less->comments as $cmt)
             <div class="media">
                 <a class="pull-left" href="#">
                     <img style="width: 30px; height: 30px" class="media-object" src="{{$cmt->users->avatar}}" alt="">
@@ -53,7 +51,7 @@
                     {{$cmt->noidung}}
                 </div>
             </div>
-            @endforeach
+            @endforeach        
 
         </div>
 
@@ -85,33 +83,7 @@
                 </div>
             </div>
 
-            <div class="panel panel-default">
-                <div class="panel-heading" align="center"><b>Nổi Bật</b></div>
-                <div class="panel-body">
-                @foreach($lessnoibat as $nb)
-                    <!-- item -->
-                    <div class="row" style="margin-top: 10px;">
-                        <div class="col-md-5">
-                            <a href="/cate/lesson/{{$nb->id}}">
-
-                                <video width="80px" height="80px" class="img-responsive" poster="{{$nb->hinh}}">
-                                    <source  src="{{$nb->media}}"  type="video/mp4">
-                                </video>
-                           
-                            </a>
-                        </div>
-                        <div class="col-md-7">
-                            <a href="/cate/lesson/{{$nb->id}}"><b>{{$nb->title}}</b></a>
-                        </div>
-                        <p style="padding-left: 5px">{{$nb->tomtat}}</p>
-                        <div class="break"></div>
-                    </div>
-                    <hr>
-                    <!-- end item -->
-                @endforeach
-
-                </div>
-            </div>
+           
             
         </div>
 
@@ -119,3 +91,9 @@
     <!-- /.row -->
 </div>
 @endsection
+<script>
+    $('form.ajax').on('submit', function(){
+        console.log('trigger');
+        return false;
+    });
+</script>

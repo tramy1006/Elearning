@@ -30,6 +30,10 @@ Route::group(['prefix' => 'cate'], function(){
 	Route::post('add', 'CateController@postAdd');
 	Route::get('delete/{id}', 'CateController@getDelete');
 	Route::post('destroy','CateController@destroy');
+
+	Route::get('list/level0/{id}','CateController@level0List');
+	Route::get('list/level1/{id}','CateController@level1List');
+	Route::get('list/level2/{id}','CateController@level2List');
 });
 
 
@@ -121,4 +125,5 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 
-
+Route::get('/redirect', 'SocialAuthController@redirect');
+Route::get('/callback', 'SocialAuthController@callback');
