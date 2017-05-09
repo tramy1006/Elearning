@@ -54,7 +54,7 @@ Question Option
         </div>
     </div>
 
-    {!! Form::submit(trans('Save'), ['class' => 'btn btn-danger']) !!}
+    {!! Form::submit('Save', ['class' => 'btn btn-danger']) !!}
     {!! Form::close() !!}
 @stop
 

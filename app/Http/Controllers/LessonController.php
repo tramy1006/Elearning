@@ -57,6 +57,11 @@ class LessonController extends Controller
         if($request->hasFile('hinh'))
         {
             $file = $request->hinh;
+             $duoi = $file->getClientOriginalExtension();
+            if($duoi !='jpg' && $duoi !='jpeg' && $duoi !='png'){
+                return redirect('/lesson/add')->with('loi','Bạn chỉ được chọn file ảnh');
+
+            }
             Cloudder::upload($file,'khoaluan/' . $less->title);
             $less->hinh = Cloudder::getResult()['url'];
         
@@ -65,6 +70,11 @@ class LessonController extends Controller
         {
             
             $filename = $request->file('media');
+             $duoi = $filename->getClientOriginalExtension();
+            if($duoi !='mp4'){
+                return redirect('/lesson/add')->with('loi','Bạn chỉ được chọn file mp4');
+
+            }
             $name = $filename->getClientOriginalName();
             $media = str_random(4)."_".$name;
             while (file_exists("uploads/lesson/video/".$media)) {
@@ -73,6 +83,25 @@ class LessonController extends Controller
             }
             $filename->move("uploads/lesson/video",$media);
             $less->media= $media;
+        
+        }
+         if($request->hasFile('audio'))
+        {
+            
+            $filename = $request->file('audio');
+            $duoi = $filename->getClientOriginalExtension();
+            if($duoi !='mp3'){
+                return redirect('/lesson/add')->with('loi','Bạn chỉ được chọn file mp3');
+
+            }
+            $name = $filename->getClientOriginalName();
+            $audio = str_random(4)."_".$name;
+            while (file_exists("uploads/lesson/audio/".$audio)) {
+                $audio = str_random(4)."_".$name;
+               
+            }
+            $filename->move("uploads/lesson/audio",$audio);
+            $less->audio= $audio;
         
         }
         
@@ -99,14 +128,17 @@ class LessonController extends Controller
         $less->tomtat = $request->tomtat;
         $less->noidung = $request->noidung;
         $less->level = $request->level; 
-       
-                                       
 
         Cloudder::destroyImage('khoaluan/'. $less->title);
         if($request->hasFile('hinh'))
         {
             
             $file = $request->hinh;
+             $duoi = $file->getClientOriginalExtension();
+             if($duoi !='jpg' && $duoi !='jpeg' && $duoi !='png'){
+                return redirect('/lesson/edit/{{$less->id}}')->with('loi','Bạn chỉ được chọn file ảnh');
+
+            }
             Cloudder::upload($file,'khoaluan/' . $less->title);
             $less->hinh = Cloudder::getResult()['url'];
            
@@ -114,8 +146,40 @@ class LessonController extends Controller
         if($request->hasFile('media'))
         {
             
-            
+            $filename = $request->file('media');
+             $duoi = $filename->getClientOriginalExtension();
+             if($duoi !='mp4'){
+                return redirect('/lesson/edit/{{$less->id}}')->with('loi','Bạn chỉ được chọn file mp4');
+
+            }
+            $name = $filename->getClientOriginalName();
+            $media = str_random(4)."_".$name;
+            while (file_exists("uploads/lesson/video/".$media)) {
+                $media = str_random(4)."_".$name;
+               
+            }
+            $filename->move("uploads/lesson/video",$media);
+            unlink("uploads/lesson/video",$less->media);
+            $less->media= $media;
            
+        }
+        if($request->hasFile('audio'))
+        {
+            $filename = $request->file('audio');
+            $duoi = $filename->getClientOriginalExtension();
+            if($duoi !='mp3'){
+                return redirect('/lesson/edit/{{$less->id}}')->with('loi','Bạn chỉ được chọn file mp3');
+
+            }
+            $name = $filename->getClientOriginalName();
+            $audio = str_random(4)."_".$name;
+            while (file_exists("uploads/lesson/audio/".$audio)) {
+                $audio = str_random(4)."_".$name;
+               
+            }
+            $filename->move("uploads/lesson/audio",$audio);
+            unlink("uploads/lesson/audio",$less->audio);
+            $less->audio= $audio;
         }
        
         $less->save();

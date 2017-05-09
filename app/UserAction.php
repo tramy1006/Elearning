@@ -12,10 +12,6 @@ class UserAction extends Model
     protected $fillable = ['action', 'action_model', 'action_id', 'user_id'];
     
 
-    /**
-     * Set to null if empty
-     * @param $input
-     */
     public function setUserIdAttribute($input)
     {
         $this->attributes['user_id'] = $input ? $input : null;
@@ -24,6 +20,6 @@ class UserAction extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
-        //return $this->belongsTo(Aircraft::class)->withTrashed();
+        
     }
 }

@@ -8,11 +8,17 @@
             <h1 align="center">{{$less->title}}</h1>
    
             <p>
+            @if($less->media != '')
                 <video width="800px" height="300px" controls  >
     					
                         <source class="img-responsive"
                         src="{{asset('/uploads/lesson/video/'.$less->media)}}" type="video/mp4">
     			</video>
+            @else
+             <audio controls style="margin-top: 50px;">
+                    <source src="{{asset('/uploads/lesson/audio/'.$less->audio)}}" type="audio/ogg">
+            </audio>
+            @endif
             </p>
            
             <p><span class="glyphicon glyphicon-time"></span> 

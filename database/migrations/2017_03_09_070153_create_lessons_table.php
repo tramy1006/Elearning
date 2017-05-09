@@ -15,6 +15,7 @@ class CreateLessonsTable extends Migration
             $table->mediumText('noidung');
             $table->string('hinh');
             $table->string('media');
+            $table->string('audio');
             $table->integer('luotxem')->default('0');
             $table->integer('level');
             $table->integer('total_question');

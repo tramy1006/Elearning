@@ -79,6 +79,17 @@ Edit Lesson
                             </p>
                             <input type="file" name="media" class="form-control">
                         </div>
+                        <div class="form-group">
+                            <label>Audio</label>
+                            <p>
+                                <audio controls>
+                                  <source src="{{asset('/uploads/lesson/audio/'.$less->audio)}}" type="audio/ogg">
+                                  
+                               
+                                </audio>
+                            </p>
+                            <input type="file" name="audio" class="form-control">
+                        </div>
                         <div class="button" align="center">
                             <button type="submit" class="btn btn-primary" role="button" style="margin-right: 20px"> <i class="fa fa-pencil fa-fw"></i>Edit Lesson</button>
                             <button type="reset" class="btn btn-primary"><i class="fa fa-refresh"></i>Reset</button> 

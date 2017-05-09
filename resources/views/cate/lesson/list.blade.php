@@ -31,7 +31,7 @@ Lessons
                                 <th style="width:200px;">Tóm Tắt</th>
                                 <th>Category</th>
                                 <th style="width: 200px">Video</th>
-                                
+                                 <th style="width: 200px">Audio</th>
                                 <th style="width: 80px">Xem</th>
                                 <th style="width: 80px">Level</th>
                                 <th>Total Question</th>
@@ -56,12 +56,20 @@ Lessons
                                 <td>{{$lesson->tomtat}}</td>
                                 <td>{{$lesson->categories->name}}</td>
                                 <td>
+                                @if($lesson->media != '')
                                 <video width="200" height="150px" controls>
                                     <source 
                                     src="{{asset('/uploads/lesson/video/'.$lesson->media)}}" type="video/mp4">
                                 </video>
+                                @endif
                                 </td>
-
+                                <td>
+                                 @if($lesson->audio != '')
+                                    <audio controls>
+                                         <source src="{{asset('/uploads/lesson/audio/'.$lesson->audio)}}" type="audio/ogg">
+                                    </audio>
+                                 @endif
+                                </td>
                                 <td align="center">
                                     {{$lesson->luotxem}}
                                 </td>
@@ -82,7 +90,7 @@ Lessons
                                      
                                  </td>
                                 <td > 
-                                    <a href="/add/{{$lesson->id}}" class="btn btn-primary"> <i class="glyphicon glyphicon-plus"></i>Add </a>
+                                    <a href="/add/{{$lesson->id}}" class="btn btn-xs btn-primary"> <i class="glyphicon glyphicon-plus"></i>Add </a>
                                 </td>             
                                 <td >
                                     <div style="float: left;">

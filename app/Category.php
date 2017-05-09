@@ -12,11 +12,5 @@ class Category extends Model
     {
     	return $this->hasMany('App\Lesson','cate_id', 'id');
     }
-    public function posts()
-    {
-    	return $this->hasMany('App\Post','cate_id', 'id');
-    }
-   
-
   
 }

@@ -69,6 +69,10 @@ Add Lesson
                             <label>Video</label>
                             <input type="file" name="media" class="form-control">
                         </div>
+                        <div class="form-group">
+                            <label>Audio</label>
+                            <input type="file" name="audio" class="form-control">
+                        </div>
                         <div class="button" align="center">
                             <button type="submit" class="btn btn-primary" role="button" style="margin-right: 20px"><i class="fa fa-plus-circle"></i>Add Category</button>
                             <button type="reset" class="btn btn-primary"><i class="fa fa-refresh"></i>Reset</button> 

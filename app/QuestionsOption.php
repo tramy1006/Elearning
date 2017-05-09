@@ -19,10 +19,6 @@ class QuestionsOption extends Model
         QuestionsOption::observe(new \App\Observers\UserActionsObserver);
     }
 
-    /**
-     * Set to null if empty
-     * @param $input
-     */
     public function setQuestionIdAttribute($input)
     {
         $this->attributes['question_id'] = $input ? $input : null;
@@ -32,5 +28,8 @@ class QuestionsOption extends Model
     {
         return $this->belongsTo(Question::class);
     }
-    
+     public function testanswer()
+    {
+        return $this->belongsTo(TestAnswer::class);
+    }
 }

@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
 class Test extends Model
 {
-    
 
     protected $fillable = ['user_id', 'result','lesson_id'];
 

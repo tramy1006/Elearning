@@ -17,10 +17,6 @@ class Question extends Model
         Question::observe(new \App\Observers\UserActionsObserver);
     }
 
-    /**
-     * Set to null if empty
-     * @param $input
-     */
     public function setTopicIdAttribute($input)
     {
         $this->attributes['lesson_id'] = $input ? $input : null;

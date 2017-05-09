@@ -40,10 +40,7 @@ Users
                                 
                             </tr>
                         @endforeach
-                    @else
-                        <tr>
-                            <td colspan="4">@lang('quickadmin.no_entries_in_table')</td>
-                        </tr>
+                   
                     @endif
                 </tbody>
             </table>

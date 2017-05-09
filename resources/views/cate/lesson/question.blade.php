@@ -28,8 +28,8 @@ Lessons
                     <tr>
 
                         <td>{{$question->question_text}}</td>
-                        <td><a class="btn btn-primary" href="/questions/{{$question->id}}/edit"><span class="fa fa-pencil fa-fw"></span>Edit</a></td>
-                        <td><a class="btn btn-danger" href="/lesson/list/question/delete/{{$question->id}}"><span class="fa fa-trash-o fa-fw"></span>Delete</a></td>
+                        <td><a class="btn btn-xs btn-primary" href="/questions/{{$question->id}}/edit"><span class="fa fa-pencil fa-fw"></span>Edit</a></td>
+                        <td><a class="btn btn-xs btn-danger" href="/lesson/list/question/delete/{{$question->id}}"><span class="fa fa-trash-o fa-fw"></span>Delete</a></td>
                     </tr>
                 @endforeach()
                 </tbody>

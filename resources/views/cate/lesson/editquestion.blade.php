@@ -66,8 +66,8 @@ Question
             
         </div>
     </div>
-
-    {!! Form::submit(trans('Update'), ['class' => 'btn btn-danger']) !!}
+    <input type="submit" value="Update" class="btn btn-danger" >
+    
    </form>
 @stop
 

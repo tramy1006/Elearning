@@ -18,7 +18,15 @@ class TestAnswer extends Model
         TestAnswer::observe(new \App\Observers\UserActionsObserver);
     }
 
-    public function question()
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+     public function questionoption()
+    {
+        return $this->belongsTo(QuestionsOption::class);
+    }
+     public function question()
     {
         return $this->belongsTo(Question::class);
     }

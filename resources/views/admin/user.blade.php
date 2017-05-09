@@ -58,7 +58,7 @@ Users
                                     @if(Auth::user()->role == 1 || $user->id == 1)
                                     <b>Disaled</b>
                                     @else
-                                    <a href="user/delete/{{$user->id}}" class="btn btn-danger"><i class="fa fa-trash-o fa-fw" ></i>Delete</a>
+                                    <a href="user/delete/{{$user->id}}" class="btn btn-xs btn-danger"><i class="fa fa-trash-o fa-fw" ></i>Delete</a>
                                     @endif
                                     </td>
                                  

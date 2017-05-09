@@ -20,8 +20,6 @@ class Lesson extends Model
     	return $this->hasMany('App\Comment','less_id','id');
     }
    
-
-
     public function questions()
     {
         return $this->hasMany(Question::class);

@@ -62,12 +62,12 @@ Slide
                             </td>
                             <td class="center">
                               
-                                <a  href="/slide/delete/{{$st->id}}" class="btn btn-danger"><i class="fa fa-trash-o fa-fw" ></i>Delete</a>
+                                <a  href="/slide/delete/{{$st->id}}" class="btn btn-xs btn-danger"><i class="fa fa-trash-o fa-fw" ></i>Delete</a>
 
                             </td>
                             <td class="center">
                                 
-                                 <a href="/slide/edit/{{$st->id}}" class="btn btn-primary"><i class="fa fa-pencil fa-fw" ></i>Edit</a>
+                                 <a href="/slide/edit/{{$st->id}}" class="btn btn-xs btn-primary"><i class="fa fa-pencil fa-fw" ></i>Edit</a>
                             </td>
 
                                          

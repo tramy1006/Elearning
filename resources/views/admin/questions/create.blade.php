@@ -140,7 +140,7 @@ Question
         </div>
     </div>
 
-    {!! Form::submit(trans('save'), ['class' => 'btn btn-danger']) !!}
+    {!! Form::submit('save', ['class' => 'btn btn-danger']) !!}
     {!! Form::close() !!}
 @endsection
 

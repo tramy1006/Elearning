@@ -141,8 +141,8 @@ Question
 
         </div>
     </div>
-
-    {!! Form::submit(trans('save'), ['class' => 'btn btn-danger']) !!}
+    <input type="submit" value="Save" class="btn btn-primary" >
+    
     </form>
 @endsection
 

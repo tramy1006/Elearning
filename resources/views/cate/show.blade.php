@@ -42,11 +42,11 @@ Categoies
                             </td>
 
                             <td >
-                                <a class="btn btn-danger" href="delete/{{$theloai->id}}"><span class="fa fa-trash-o fa-fw"></span>Delete</a>
+                                <a class="btn btn-xs btn-danger" href="delete/{{$theloai->id}}"><span class="fa fa-trash-o fa-fw"></span>Delete</a>
                             </td>
 
                             <td>
-                                <a class="btn btn-primary" href="edit/{{$theloai->id}}"><span class="fa fa-pencil fa-fw"></span>Edit</a>
+                                <a class="btn btn-xs btn-primary" href="edit/{{$theloai->id}}"><span class="fa fa-pencil fa-fw"></span>Edit</a>
    
                             </td>
 
