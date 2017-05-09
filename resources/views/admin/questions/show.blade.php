@@ -16,9 +16,12 @@ Question
                 <div class="col-md-6">
                     <table class="table table-bordered table-striped">
                         <tr><th>Lesson</th>
-                    <td>{{ $question->lesson->title or '' }}</td></tr><tr><th>Question text</th>
-                    <td>{!! $question->question_text !!}</td></tr><tr><th>Code snippet</th>
-                    <td>{!! $question->code_snippet !!}</td></tr><tr><th>Answer explanation</th>
+                    <td>{{ $question->lesson->title or '' }}</td></tr>
+                    <tr><th>Question text</th>
+                    <td>{!! $question->question_text !!}</td></tr>
+
+                    
+                    <tr><th>Answer explanation</th>
                     <td>{!! $question->answer_explanation !!}</td></tr><tr><th>More info link</th>
                     <td>{{ $question->more_info_link }}</td></tr>
                     </table>

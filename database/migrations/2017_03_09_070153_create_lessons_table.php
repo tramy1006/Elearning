@@ -5,11 +5,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateLessonsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('lessons', function (Blueprint $table) {
@@ -24,19 +20,12 @@ class CreateLessonsTable extends Migration
             $table->integer('total_question');
             $table->integer('cate_id')->unsigned();
             $table->foreign('cate_id')->references('id')->on('categories')->onDelete('cascade');
-            
-
-            
             $table->timestamps();
 
             
         });
     }
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+ 
     public function down()
     {
         Schema::drop('lessons');

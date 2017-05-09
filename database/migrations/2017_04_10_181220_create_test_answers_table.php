@@ -5,11 +5,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateTestAnswersTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+   
     public function up()
     {
         Schema::create('test_answers', function (Blueprint $table) {
@@ -24,11 +20,6 @@ class CreateTestAnswersTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::drop('test_answers');

@@ -5,11 +5,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateUserActionsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+  
     public function up()
     {
         Schema::create('user_actions', function (Blueprint $table) {
@@ -19,17 +15,12 @@ class CreateUserActionsTable extends Migration
             $table->string('action');
             $table->string('action_model');
             $table->integer('action_id');
-            
             $table->timestamps();
             
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+  
     public function down()
     {
         Schema::drop('user_actions');

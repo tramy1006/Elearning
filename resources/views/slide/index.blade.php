@@ -39,7 +39,7 @@ Slide
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Hình</th>
-								<th >Created_at</th>
+								                <th >Created_at</th>
                                 <th >Delete</th>
                                 <th>Edit</th>
                             </tr>

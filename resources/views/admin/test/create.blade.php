@@ -22,9 +22,7 @@ Test
                     <div class="form-group">
                         <strong>Question {{ $i }}.<br />{!! nl2br($question->question_text) !!}</strong>
 
-                        @if ($question->code_snippet != '')
-                            <div class="code_snippet">{!! $question->code_snippet !!}</div>
-                        @endif
+                       
 
                         <input
                             type="hidden"

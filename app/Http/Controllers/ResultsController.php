@@ -16,7 +16,7 @@ class ResultsController extends Controller
     {
         
         $results = Test::all()->load('user');
-        if(!Auth::user()->role == 0) {
+        if(!Auth::user()->role == 2) {
             $results = $results->where('user_id', '=', Auth::id());
     
         }

@@ -5,11 +5,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateTestsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+  
     public function up()
     {
         Schema::create('tests', function (Blueprint $table) {
@@ -17,17 +13,12 @@ class CreateTestsTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->text('result');
             $table->integer('lesson_id')->unsigned();
-           
             $table->timestamps();
             
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+  
     public function down()
     {
         Schema::drop('tests');

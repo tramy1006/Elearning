@@ -21,34 +21,11 @@
     <script src="/js/bootstrap.js"></script>
     
     <script type="text/javascript" src="{!! asset('admin_asset/ck/ckeditor/ckeditor.js') !!}"></script>
-    <style>
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    
    
-}
-
-.dropdown-content {
-    display: none;
-  
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-</style>
 </head>
 <body id="app-layout">
- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-       @include('pages.nav')
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        @include('pages.nav')
     </nav>
  <div class="container">
         <!-- slider -->
@@ -63,45 +40,44 @@
         <div class="row main-left">
             <div class="col-md-12" >
              
-			<div class="panel panel-default">
-				<div class="row">
-				  	<h2 align="center" style="margin-bottom: 50px; margin-top: 20px">WEBCOME TO WEBSITE</h2>
-				  	<div class="col-md-3" style="margin-right: 60px; height: 250px; margin-left: 70px">
-				  		<img src="/thongminh.jpg" width="100%" height="100px" >
-				  		<b>Hệ thống bài học thông minh, đa dạng & liên tục được cập nhật</b>
-				  	</div>
-				  	<div class="col-md-3" style=" margin-right: 60px; height: 250px ">
-				  		<img src="/doituong.jpg" width="100%" height="100px" >
-				  		<b>Chương trình phù hợp với mọi đối tượng</b>
-				  	</div>
-				  	<div class="col-md-3" style="height: 250px">
-				  	<img src="/thoigian.jpg" width="100%" height="100px">
-				  		<b>Chủ động về thời gian, địa điểm</b>
-				  	</div>
-				  	<div class="col-md-3" style="margin-right: 60px; height: 250px; margin-left: 70px">
-				  		<img src="/ontap.jpg" width="100%" height="100px" >
-				  		<b>Ôn tập và học lại kiến thức theo trình độ của mình</b>
-				  	</div>
-				  		<div class="col-md-3" style="margin-right: 60px; height: 250px; ">
-				  		<img src="/nguoidung.png" width="100%" height="100px" >
-				  		<b>Gửi bài để nhận điểm và kết quả trực tiếp từ hệ thống</b>
-				  	</div>
-				  		<div class="col-md-3" style=" height: 250px;">
-				  		<img src="/tailieu.jpg" width="100%" height="100px" >
-				  		<b>Tài liệu tiếng Anh phong phú, thực tế</b>
-				  	</div>
-			  	</div>
+			     <div class="panel panel-default">
+    				<div class="row">
+    				  	<h2 align="center" style="margin-bottom: 50px; margin-top: 20px">WEBCOME TO WEBSITE</h2>
+    				  	<div class="col-md-3" style="margin-right: 60px; height: 250px; margin-left: 70px">
+    				  		<img src="/thongminh.jpg" width="100%" height="100px" >
+    				  		<b>Hệ thống bài học thông minh, đa dạng & liên tục được cập nhật</b>
+    				  	</div>
+    				  	<div class="col-md-3" style=" margin-right: 60px; height: 250px ">
+    				  		<img src="/doituong.jpg" width="100%" height="100px" >
+    				  		<b>Chương trình phù hợp với mọi đối tượng</b>
+    				  	</div>
+    				  	<div class="col-md-3" style="height: 250px">
+    				  	<img src="/thoigian.jpg" width="100%" height="100px">
+    				  		<b>Chủ động về thời gian, địa điểm</b>
+    				  	</div>
+    				  	<div class="col-md-3" style="margin-right: 60px; height: 250px; margin-left: 70px">
+    				  		<img src="/ontap.jpg" width="100%" height="100px" >
+    				  		<b>Ôn tập và học lại kiến thức theo trình độ của mình</b>
+    				  	</div>
+    				  		<div class="col-md-3" style="margin-right: 60px; height: 250px; ">
+    				  		<img src="/nguoidung.png" width="100%" height="100px" >
+    				  		<b>Gửi bài để nhận điểm và kết quả trực tiếp từ hệ thống</b>
+    				  	</div>
+    				  		<div class="col-md-3" style=" height: 250px;">
+    				  		<img src="/tailieu.jpg" width="100%" height="100px" >
+    				  		<b>Tài liệu tiếng Anh phong phú, thực tế</b>
+    				  	</div>
+    			  	</div>
 
 			  	
-			</div>
-		</div>
+			    </div>
+		    </div>
         </div>
        
     </div> 
     <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
     
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
     <script src="js/jquery.js"></script>

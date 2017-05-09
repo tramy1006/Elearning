@@ -38,18 +38,7 @@ Question
                     @endif
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 form-group">
-                    {!! Form::label('code_snippet', 'Code snippet', ['class' => 'control-label']) !!}
-                    {!! Form::textarea('code_snippet', old('code_snippet'), ['class' => 'form-control ', 'placeholder' => '']) !!}
-                    <p class="help-block"></p>
-                    @if($errors->has('code_snippet'))
-                        <p class="help-block">
-                            {{ $errors->first('code_snippet') }}
-                        </p>
-                    @endif
-                </div>
-            </div>
+            
             <div class="row">
                 <div class="col-xs-12 form-group">
                     {!! Form::label('answer_explanation', 'Answer explanation*', ['class' => 'control-label']) !!}
